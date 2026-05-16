@@ -2,38 +2,34 @@
 
 Homebrew tap for distributing **MacCopy** (Clipboard Manager) as a macOS cask.
 
-## What is in this repository
+## Install
 
-- `clipboard-manager.rb` — Homebrew cask definition for the `maccopy` app.
-
-## Installation
-
-```bash
+```sh
 brew tap maccopy/homebrew-tap
 brew install --cask maccopy
 ```
 
-You can also install in one command:
+Or in one command:
 
-```bash
+```sh
 brew install --cask maccopy/homebrew-tap/maccopy
 ```
 
 ## Upgrade
 
-```bash
+```sh
 brew upgrade --cask maccopy
 ```
 
 ## Uninstall
 
-```bash
+```sh
 brew uninstall --cask maccopy
 ```
 
-To remove app data managed by the cask:
+To remove app data:
 
-```bash
+```sh
 brew zap --cask maccopy
 ```
 
@@ -45,6 +41,8 @@ brew zap --cask maccopy
 
 When publishing a new app release:
 
-1. Update `version` in `clipboard-manager.rb`.
+1. Update `version` in `Casks/maccopy.rb`.
 2. Update `sha256` for the new release zip.
-3. Commit and push the change.
+3. Commit and push.
+
+**Source:** [macos-clipboard-manager](https://github.com/FernandoHaeser/macos-clipboard-manager)
