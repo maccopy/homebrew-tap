@@ -5,7 +5,7 @@ cask "maccopy" do
   url "https://github.com/maccopy/maccopy/releases/download/v#{version}/Maccopy.zip"
   name "Maccopy"
   desc "macOS menu bar clipboard history manager"
-  homepage "https://github.com/maccopy/maccopy"
+  homepage "https://maccopy.github.io/maccopy/"
 
   livecheck do
     url :url
