@@ -45,4 +45,4 @@ When publishing a new app release:
 2. Update `sha256` for the new release zip.
 3. Commit and push.
 
-**Source:** [macos-clipboard-manager](https://github.com/FernandoHaeser/macos-clipboard-manager)
+**Source:** [maccopy](https://github.com/maccopy/maccopy)
