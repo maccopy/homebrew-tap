@@ -1,0 +1,27 @@
+name: Bump maccopy cask
+
+on:
+  schedule:
+    - cron: "0 * * * *" # every hour
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  bump:
+    runs-on: macos-latest
+    steps:
+      - name: Set up Homebrew
+        uses: Homebrew/actions/setup-homebrew@master
+
+      - name: Configure git
+        uses: Homebrew/actions/git-user-config@master
+
+      - name: Bump cask if new release exists
+        env:
+          HOMEBREW_GITHUB_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          brew tap maccopy/tap https://github.com/maccopy/homebrew-tap
+          brew bump-cask-pr maccopy/tap/maccopy --no-browse --no-audit
