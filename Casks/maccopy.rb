@@ -1,6 +1,6 @@
 cask "maccopy" do
-  version "1.1.1"
-  sha256 "32920ddc2e77e95bccb30438252c4f0c5dcb38b9e35eb8d5d381590f77cae0ff"
+  version "1.1.2"
+  sha256 "67145e80cb65975ce430f16af232509d3fbf390f1025c96957b5d7557130b1f1"
 
   url "https://github.com/maccopy/maccopy/releases/download/v#{version}/Maccopy.zip"
   name "Maccopy"
