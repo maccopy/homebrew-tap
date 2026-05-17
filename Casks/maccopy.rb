@@ -4,7 +4,7 @@ cask "maccopy" do
 
   url "https://github.com/maccopy/maccopy/releases/download/v#{version}/Maccopy.zip"
   name "Maccopy"
-  desc "macOS menu bar clipboard history manager"
+  desc "Menu bar clipboard history manager"
   homepage "https://maccopy.github.io/maccopy/"
 
   livecheck do
@@ -12,14 +12,14 @@ cask "maccopy" do
     strategy :github_latest
   end
 
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   app "Maccopy.app"
 
   zap trash: [
     "~/Library/Application Support/Maccopy",
-    "~/Library/Preferences/com.maccopy.maccopy.plist",
     "~/Library/LaunchAgents/com.maccopy.maccopy.plist",
     "~/Library/Logs/Maccopy.log",
+    "~/Library/Preferences/com.maccopy.maccopy.plist",
   ]
 end
