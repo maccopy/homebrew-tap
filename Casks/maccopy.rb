@@ -8,7 +8,7 @@ cask "maccopy" do
   homepage "https://maccopy.github.io/maccopy/"
 
   livecheck do
-    url :url
+    url "https://github.com/maccopy/maccopy"
     strategy :github_latest
   end
 
